@@ -4,10 +4,6 @@ const burgerButton = document.querySelector('.burger');
 const nav = document.querySelector('.nav');
 const tabs = document.querySelectorAll('.tab');
 const productCards = document.querySelectorAll('.product-card');
-const modal = document.querySelector('.modal');
-const modalTitle = document.querySelector('#modal-title');
-const modalDescription = document.querySelector('.modal__description');
-const modalClose = document.querySelector('.modal__close');
 
 const savedTheme = localStorage.getItem('theme');
 
@@ -55,44 +51,8 @@ tabs.forEach((tab) => {
   });
 });
 
-productCards.forEach((card) => {
-  card.addEventListener('click', () => {
-    const title = card.querySelector('h2')?.textContent || '';
-    const description = card.querySelector('p')?.textContent || '';
-
-    if (modalTitle) {
-      modalTitle.textContent = title;
-    }
-
-    if (modalDescription) {
-      modalDescription.textContent = description;
-    }
-
-    if (modal) {
-      modal.hidden = false;
-      document.body.classList.add('menu-open');
-    }
-  });
-});
-
-function closeModal() {
-  if (modal) {
-    modal.hidden = true;
-    document.body.classList.remove('menu-open');
-  }
-}
-
-modalClose?.addEventListener('click', closeModal);
-
-modal?.addEventListener('click', (event) => {
-  if (event.target === modal) {
-    closeModal();
-  }
-});
-
 document.addEventListener('keydown', (event) => {
   if (event.key === 'Escape') {
-    closeModal();
     closeMenu();
   }
 });

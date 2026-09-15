@@ -52,7 +52,7 @@
       <section class="section favorite" id="favorite-coffee">
         <div class="container">
           <h2>Choose your <span>favorite</span> coffee</h2>
-          <div class="slider" aria-label="Favorite coffee">
+          <div class="slider" role="group" aria-label="Favorite coffee">
             <button class="slider__button" type="button" aria-label="Previous slide">←</button>
             <article class="favorite-card">
               <img src="assets/images/coffee-slider-1.png" alt="S'mores Frappuccino" />
@@ -64,7 +64,7 @@
             </article>
             <button class="slider__button" type="button" aria-label="Next slide">→</button>
           </div>
-          <div class="slider-dots" aria-label="Slider pagination">
+          <div class="slider-dots" role="group" aria-label="Slider pagination">
             <button class="slider-dots__item slider-dots__item--active" type="button" aria-label="Slide 1"></button>
             <button class="slider-dots__item" type="button" aria-label="Slide 2"></button>
             <button class="slider-dots__item" type="button" aria-label="Slide 3"></button>
@@ -127,6 +127,6 @@
       </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script type="module" src="js/script.js"></script>
   </body>
 </html>
