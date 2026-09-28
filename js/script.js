@@ -63,7 +63,7 @@ document.addEventListener("keydown", (event) => {
 
 const slides = [
   {
-    image: "assets/images/coffee-slider-1.png",
+    image: new URL("../assets/images/coffee-slider-1.png", import.meta.url).href,
     alt: "S'mores Frappuccino",
     title: "S'mores Frappuccino",
     description:
@@ -71,7 +71,7 @@ const slides = [
     price: "$5.50",
   },
   {
-    image: "assets/images/coffee-slider-2.png",
+    image: new URL("../assets/images/coffee-slider-2.png", import.meta.url).href,
     alt: "Caramel Macchiato",
     title: "Caramel Macchiato",
     description:
@@ -79,7 +79,7 @@ const slides = [
     price: "$5.00",
   },
   {
-    image: "assets/images/coffee-slider-3.png",
+    image: new URL("../assets/images/coffee-slider-3.png", import.meta.url).href,
     alt: "Ice coffee",
     title: "Ice coffee",
     description:
