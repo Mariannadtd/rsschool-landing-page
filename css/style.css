@@ -1060,3 +1060,9 @@ body.modal-open {
     padding: 8px 12px;
   }
 }
+
+.load-more img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
