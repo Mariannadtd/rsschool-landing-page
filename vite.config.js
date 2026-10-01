@@ -1,4 +1,5 @@
 export default {
+  base: '/rsschool-landing-page/',
   build: {
     rollupOptions: {
       input: {
@@ -9,3 +10,4 @@ export default {
     sourcemap: true,
   },
 };
+
